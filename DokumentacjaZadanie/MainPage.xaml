@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DokumentacjaZadanie.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <HorizontalStackLayout>
+                <Entry
+                    Placeholder="Podaj pierwszą liczbę"
+                    x:Name="Ent1"
+                />
+                <Entry
+                    Placeholder="Podaj drugą liczbę"
+                    x:Name="Ent2"
+                />
+            </HorizontalStackLayout>
+            <Button
+                Clicked="ObliczLiczbyBtn"
+                Text="Oblicz liczby"
+                />
+            <Label
+                Text=""
+                x:Name="LiczLbl"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
